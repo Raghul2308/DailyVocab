@@ -16,7 +16,7 @@ public class VocabSchedulerService {
         this.emailService = emailService;
     }
 
-    // Runs every day at 1:00 PM IST (7:30 AM UTC)
+    // Runs every day at 1:37 PM IST (8:07 AM UTC)
     @Scheduled(cron = "${vocab.schedule.cron}", zone = "UTC")
     public void sendDailyVocabEmail() {
         log.info("Scheduler triggered: sending daily vocab email...");
